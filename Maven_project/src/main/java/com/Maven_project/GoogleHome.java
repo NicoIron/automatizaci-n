@@ -16,9 +16,9 @@ import org.openqa.selenium.interactions.Actions;
 public class GoogleHome {
 
 	private WebDriver Driver;
-	By Ingresar = By.linkText("INICIAR SESIÓN");
+	By Ingresar = By.linkText("INICIAR SESIÃ“N");
 	By email = By.xpath("//*[@id=\"dwfrm_login_username\"]");
-	By contraseña = By.xpath("//*[@id=\"dwfrm_login_password\"]");
+	By contraseÃ±a = By.xpath("//*[@id=\"dwfrm_login_password\"]");
 	By ingresar = By.xpath("//*[@id=\"dwfrm_login\"]/fieldset/div[4]");
 	By cuadro = By.xpath("//*[@id=\"overlay_membersonly\"]/p/a[1]/img");
 	By linkH = By.linkText("HOMBRES");
@@ -26,7 +26,7 @@ public class GoogleHome {
 	By SelecProduc = By.xpath("//*[@id=\"app\"]/div/div[3]/div/div[2]/div/div/div[2]/div[2]/div[10]/div/div/div/div[1]/a");
 	By seleccionarTalla = By.xpath("//*[@id=\"app\"]/div/div/div[3]/div/div[3]/div[2]/div[2]/div/div/form/div[2]/div[1]/div/div");
 	By seleccionarTalla_2 = By.xpath("//*[@id=\"app\"]/div/div/div[3]/div/div[3]/div[2]/div[2]/div/div/form/div[2]/div[1]/div/div/div/div/ul/li[1]");
-	By AñadirCArrito = By.xpath("//*[@id=\"app\"]/div/div/div[3]/div/div[3]/div[2]/div[2]/div/div/form/div[3]/button");
+	By AÃ±adirCArrito = By.xpath("//*[@id=\"app\"]/div/div/div[3]/div/div[3]/div[2]/div[2]/div/div/form/div[3]/button");
 	By VEr_Carrito = By.xpath("//*[@id=\"modal-root\"]/div/div/div/div/div/div[1]/div[3]/div/a[1]");
 	
 
@@ -38,7 +38,7 @@ public class GoogleHome {
 
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/Chrome-Driver/chromedriver.exe");
 		Driver = new ChromeDriver();
-		// tamaño del ejecutable Driver
+		// tamaÃ±o del ejecutable Driver
 		Driver.manage().window().maximize();
 		// envia url
 		Driver.get("https://www.adidas.co/camiseta-visitante-manchester-united/ED7388.html");
@@ -48,7 +48,7 @@ public class GoogleHome {
 	public void Buscar_Hombres() throws InterruptedException {
 		Driver.findElement(Ingresar).click();
 		Driver.findElement(email).sendKeys("nicodt0@gmail.com");
-		Driver.findElement(contraseña).sendKeys("kora23*_");
+		Driver.findElement(contraseÃ±a).sendKeys("****");
 		Driver.findElement(ingresar).click();
 		Driver.findElement(cuadro).click();
 		Driver.findElement(linkH).click();
@@ -61,7 +61,7 @@ public class GoogleHome {
 		Thread.sleep(5000);
 		Driver.findElement(seleccionarTalla_2).click();
 		Thread.sleep(5000);
-		Driver.findElement(AñadirCArrito).click();
+		Driver.findElement(AÃ±adirCArrito).click();
 		Thread.sleep(5000);
 		Driver.findElement(VEr_Carrito).click();
 
